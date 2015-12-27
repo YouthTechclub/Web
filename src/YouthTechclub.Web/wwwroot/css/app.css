@@ -1,6 +1,85 @@
-﻿#top {
-    background-image: url('../img/header.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+﻿.navbar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rosybrown;
 }
+
+.nav-header {
+    float: left;
+}
+
+    .nav-header a {
+        display: inline-block;
+        color: saddlebrown;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        .nav-header a:hover {
+            background-color: rosybrown;
+        }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+#top {
+    background: url('../img/header.jpg') no-repeat no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+@media (max-width: 480px) {
+    #top {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+/*.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}*/

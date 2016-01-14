@@ -10,6 +10,10 @@
  *
  * ============================================= */
 body,
+html {
+  height: 100%;
+}
+body,
 div,
 h1,
 h2,
@@ -129,8 +133,7 @@ body {
 }
 section {
   text-align: center;
-  padding: 100px 0 0;
-  height: 600px;
+  height: 100%;
   width: 100%;
 }
 h1 {
@@ -144,8 +147,7 @@ p {
   FIXED HEADER
 --------------------------------------------- */
 header {
-  background: #ffffff;
-  opacity: 0.5;
+  background: rgba(255, 255, 255, 0.5);
   position: fixed;
   z-index: 3;
   width: 100%;
@@ -158,7 +160,7 @@ header {
   font-weight: bold;
   padding: 0.7em 0 0 1em;
   color: #6e6e6e;
-  font-size: 24px;
+  font-size: 20px;
   float: left;
 }
 /* ------------------------------------------
@@ -233,14 +235,17 @@ header {
 }
 .nav-collapse a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-size: 24px;
+  font-size: 20px;
   border-top: 1px solid #6e6e6e;
   text-decoration: none;
-  background: #ffffff;
   padding: 0.7em 1em;
   color: #6e6e6e;
   width: 100%;
   float: left;
+}
+.nav-collapse a:active,
+.nav-collapse .active a {
+  background: rgba(37, 119, 165, 0.4);
 }
 @media screen and (min-width: 40em) {
   .nav-collapse a {
@@ -251,7 +256,7 @@ header {
   }
 }
 .nav-collapse ul ul a {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.5);
   padding-left: 2em;
 }
 @media screen and (min-width: 40em) {
@@ -302,8 +307,15 @@ header {
   /* Close icon */
 }
 /* ------------------------------------------
-  FIRST SECTION - MAIN TITLE
+  HOME SECTION - MAIN TITLE
 --------------------------------------------- */
+#home {
+  background: url(../img/header.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .main__header {
   padding-top: 3em;
   font-size: 48px;
@@ -378,4 +390,7 @@ header {
 #network__text p {
   text-align: right;
   width: auto !important;
+}
+.double__button {
+  width: 50%;
 }

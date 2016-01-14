@@ -10,7 +10,7 @@
  *
  * ============================================= */
 
-@navbackground: #fff;
+@navbackground: rgba(255, 255, 255, 0.5);
 @navbackgroundopacity: 0.5;
 @navbackgroundopacityactive: 0.15;
 @navtextcolor: #6e6e6e;
@@ -20,10 +20,13 @@
 @projectstitlecolor: #171b1e;
 @contactformtitle: #dfdfdf;
 @contactformbackground: #363736;
-@headerfontsize: 24px;
+@headerfontsize: 20px;
 @maintextcolor: #fff;
 @missionheight: 150px;
 
+body, html{
+    height:100%;
+}
 body, div,
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
@@ -136,8 +139,7 @@ body {
 
 section {
     text-align: center;
-    padding: 100px 0 0;
-    height: 600px;
+    height: 100%;
     width: 100%;
 }
 
@@ -157,7 +159,6 @@ p {
 
 header {
     background: @navbackground;
-    opacity: @navbackgroundopacity;
     position: fixed;
     z-index: 3;
     width: 100%;
@@ -264,7 +265,6 @@ header {
     font-size: @headerfontsize;
     border-top: 1px solid @navtextcolor;
     text-decoration: none;
-    background: @navbackground;
     padding: 0.7em 1em;
     color: @navtextcolor;
     width: 100%;
@@ -273,8 +273,7 @@ header {
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-    // Add background color on active
-    // background:
+    background: rgba(37, 119, 165, 0.4);
 }
 
 @media screen and (min-width: 40em) {
@@ -343,8 +342,15 @@ header {
 }
 
 /* ------------------------------------------
-  FIRST SECTION - MAIN TITLE
+  HOME SECTION - MAIN TITLE
 --------------------------------------------- */
+#home{
+    background: url(../img/header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 .main__header {
     padding-top: 3em;
@@ -436,4 +442,9 @@ header {
 #network__text p {
     text-align: right;
     width: auto !important;
+}
+
+
+.double__button{
+    width: 50%;
 }

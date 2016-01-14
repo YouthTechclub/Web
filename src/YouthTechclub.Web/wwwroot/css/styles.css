@@ -373,13 +373,17 @@ header {
   color: #ffffff;
 }
 .main__subtext {
+<<<<<<< HEAD
   color: #ffffff;
+=======
+  color: #fff;
+>>>>>>> origin/master
 }
 .main__pointer {
   border: 3px solid white;
   border-radius: 50px;
   padding: 10px;
-  color: #ffffff;
+  color: #fff;
   position: absolute;
   bottom: 10px;
   transform: translateX(-50%);

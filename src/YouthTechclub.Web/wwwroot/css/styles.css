@@ -309,16 +309,16 @@ header {
   padding-top: 3em;
   font-size: 48px;
   font-weight: bold;
-  color: #ffffff;
+  color: #fff;
 }
 .main__subtext {
   font-size: 24px;
-  color: #ffffff;
+  color: #fff;
 }
 .main__pointer {
   padding-top: 8.7em;
   font-size: 28px;
-  color: #ffffff;
+  color: #fff;
 }
 /* ------------------------------------------
   SECOND SECTION - MISSION
@@ -388,4 +388,36 @@ header {
 }
 .double__button {
   width: 50%;
+}
+/* ------------------------------------------
+  CONTACT SECTION - FORM STYLING
+--------------------------------------------- */
+#contact {
+  background: #363736;
+  color: #dfdfdf;
+}
+input,
+textarea,
+button {
+  border: 1px solid #dfdfdf;
+  width: 12em;
+  margin: 0;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  /* For legacy WebKit based browsers */
+  -moz-box-sizing: border-box;
+  /* For legacy (Firefox <29) Gecko based browsers */
+  box-sizing: border-box;
+}
+.fa-col {
+  color: #dfdfdf;
+}
+.contact__container,
+.contact__image__container {
+  width: 100%;
+}
+.contact_image {
+  float: left;
+  width: 50%;
+  display: inline-block;
 }

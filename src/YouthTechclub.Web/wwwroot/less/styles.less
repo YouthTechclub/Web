@@ -1,16 +1,4 @@
-﻿/* =============================================
- *
- *   FIXED RESPONSIVE NAV
- *
- *   (c) 2014 @adtileHQ
- *   http://www.adtile.me
- *   http://twitter.com/adtilehq
- *
- *   Free to use under the MIT License.
- *
- * ============================================= */
-
-@navbackground: rgba(255, 255, 255, 0.5);
+﻿@navbackground: rgba(255, 255, 255, 0.5);
 @navbackgroundopacity: 0.5;
 @navbackgroundopacityactive: 0.15;
 @navtextcolor: #6e6e6e;
@@ -379,11 +367,15 @@ header {
 }
 
 .about__container {
-    width: 70%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 960px;
     margin: 0 auto;
 }
 
 .mission__container {
+    margin-bottom: 10%;
     width: 100%;
     position: relative;
 }
@@ -400,14 +392,11 @@ header {
 
 #rocket__image {
     float: left;
-    width: 35%;
     height: @missionheight;
     display: inline-block;
 }
 
 #rocket__text {
-    float: right;
-    width: 65%;
     height: @missionheight;
     display: inline-block;
 }
@@ -422,15 +411,20 @@ header {
 }
 
 #network__image {
-    width: 35%;
     float: right;
     height: @missionheight;
     display: inline-block;
 }
 
+#network__image, #rocket__image{
+    width: 40%;
+}
+
+#network__text, #rocket__text{
+    width: 60%
+}
+
 #network__text {
-    float: left;
-    width: 65%;
     height: @missionheight;
     display: inline-block;
 }

@@ -454,13 +454,21 @@ header {
 }
 
 input, textarea, button {
-    border: 1px solid @contactformtitle;
-    width: 12em;
-    margin: 0;
+    border: 2px solid @contactformtitle;
+    width: 20em;
+    margin: 5px;
     padding: 5px;
     -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
     box-sizing: border-box;
+}
+
+.customtextfield {
+    background-color: @contactformbackground;
+}
+
+.custombutton {
+    background-color: @contactformtitle;
 }
 
 .fa-col {
@@ -472,7 +480,24 @@ input, textarea, button {
 }
 
 .contact_image {
-float: left;
+    float: left;
     width: 50%;
+    display: inline-block;
+}
+
+.contact__form {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    display: inline-block;
+}
+
+.right {
+    float: right;
+    width: 45%;
     display: inline-block;
 }

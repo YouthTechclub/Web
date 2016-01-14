@@ -56,7 +56,76 @@ a:hover {
 @viewport {
     width: device-width;
 }
+/* ------------------------------------------
+  RESPONSIVE ELEMENTS
+--------------------------------------------- */
 
+@media (max-width: 767px) {
+    .main__header{
+        font-size: 3em;
+    }
+
+    .main__subtext{
+        font-size: 1.5em;
+    }
+
+    .mission__container h1 {
+        font-size: 3em;
+    }
+
+    .mission__container p {
+        font-size: 1.5em;
+    }
+
+    .main__pointer{
+        font-size: 1em;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .main__header{
+        font-size: 3em;
+    }
+
+    .main__subtext{
+        font-size: 2em;
+    }
+
+    .mission__container h1 {
+        font-size: 1.75em;
+    }
+
+    .mission__container p {
+        font-size: 1.5em;
+    }
+
+    .main__pointer{
+        font-size: 1.25em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main__header{
+        font-size: 4em;
+    }
+
+    .main__subtext{
+        font-size: 2em;
+    }
+
+    .mission__container h1 {
+        font-size: 1.75em;
+    }
+
+    .mission__container p {
+        font-size: 1.5em;
+    }
+
+    .main__pointer{
+        font-size: 1.5em;
+    }
+}
 
 /* ------------------------------------------
   RESPONSIVE NAV STYLES
@@ -352,13 +421,11 @@ header {
     transform: translateY(-50%);
 }
 .main__header {
-    font-size: 48px;
     font-weight: bold;
     color: @maintextcolor;
 }
 
 .main__subtext {
-    font-size: 24px;
     color: @maintextcolor;
 }
 
@@ -366,7 +433,6 @@ header {
     border: 3px solid white;
     border-radius: 50px;
     padding: 10px;
-    font-size: 1.25em;
     color: @maintextcolor;
     position: absolute;
     bottom: 10px;
@@ -395,13 +461,11 @@ header {
     position: relative;
 }
 
-.mission__container h1 {
-    font-size: 32px;
+.mission__container h1, {
     color: @bluetitlecolor;
 }
 
 .mission__container p {
-    font-size: 24px;
     color: @bluetextcolor;
 }
 

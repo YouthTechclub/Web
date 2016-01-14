@@ -144,7 +144,7 @@ p {
   FIXED HEADER
 --------------------------------------------- */
 header {
-  background: #fff;
+  background: #ffffff;
   opacity: 0.5;
   position: fixed;
   z-index: 3;
@@ -236,7 +236,7 @@ header {
   font-size: 24px;
   border-top: 1px solid #6e6e6e;
   text-decoration: none;
-  background: #fff;
+  background: #ffffff;
   padding: 0.7em 1em;
   color: #6e6e6e;
   width: 100%;
@@ -251,7 +251,7 @@ header {
   }
 }
 .nav-collapse ul ul a {
-  background: #fff;
+  background: #ffffff;
   padding-left: 2em;
 }
 @media screen and (min-width: 40em) {
@@ -308,16 +308,16 @@ header {
   padding-top: 3em;
   font-size: 48px;
   font-weight: bold;
-  color: #fff;
+  color: #ffffff;
 }
 .main__subtext {
   font-size: 24px;
-  color: #fff;
+  color: #ffffff;
 }
 .main__pointer {
   padding-top: 8.7em;
   font-size: 28px;
-  color: #fff;
+  color: #ffffff;
 }
 /* ------------------------------------------
   SECOND SECTION - MISSION
@@ -362,12 +362,12 @@ header {
 }
 #network__image {
   width: 35%;
-  float: left;
+  float: right;
   height: 150px;
   display: inline-block;
 }
 #network__text {
-  float: right;
+  float: left;
   width: 65%;
   height: 150px;
   display: inline-block;

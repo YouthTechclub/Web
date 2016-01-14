@@ -8,13 +8,18 @@
 @projectstitlecolor: #171b1e;
 @contactformtitle: #dfdfdf;
 @contactformbackground: #363736;
-@headerfontsize: 20px;
+@headerfontsize: 1.25em;
 @maintextcolor: #fff;
 @missionheight: 150px;
 
 body, html{
     height:100%;
 }
+
+a{
+    text-decoration: none;
+}
+
 body, div,
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
@@ -24,6 +29,7 @@ summary, hgroup {
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 a:active,
@@ -340,8 +346,12 @@ header {
   background-size: cover;
 }
 
+.center{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .main__header {
-    padding-top: 3em;
     font-size: 48px;
     font-weight: bold;
     color: @maintextcolor;
@@ -353,9 +363,14 @@ header {
 }
 
 .main__pointer {
-    padding-top: 8.7em;
-    font-size: 28px;
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 1.25em;
     color: @maintextcolor;
+    position: absolute;
+    bottom: 10px;
+    transform: translateX(-50%);
 }
 
 /* ------------------------------------------

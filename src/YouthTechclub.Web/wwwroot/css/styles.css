@@ -2,6 +2,9 @@ body,
 html {
   height: 100%;
 }
+a {
+  text-decoration: none;
+}
 body,
 div,
 h1,
@@ -40,6 +43,7 @@ hgroup {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: 'Roboto', sans-serif;
 }
 a:active,
 a:hover {
@@ -149,7 +153,7 @@ header {
   font-weight: bold;
   padding: 0.7em 0 0 1em;
   color: #6e6e6e;
-  font-size: 20px;
+  font-size: 1.25em;
   float: left;
 }
 /* ------------------------------------------
@@ -224,7 +228,7 @@ header {
 }
 .nav-collapse a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-size: 20px;
+  font-size: 1.25em;
   border-top: 1px solid #6e6e6e;
   text-decoration: none;
   padding: 0.7em 1em;
@@ -305,8 +309,12 @@ header {
   -o-background-size: cover;
   background-size: cover;
 }
+.center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .main__header {
-  padding-top: 3em;
   font-size: 48px;
   font-weight: bold;
   color: #ffffff;
@@ -316,9 +324,14 @@ header {
   color: #ffffff;
 }
 .main__pointer {
-  padding-top: 8.7em;
-  font-size: 28px;
+  border: 3px solid white;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 1.25em;
   color: #ffffff;
+  position: absolute;
+  bottom: 10px;
+  transform: translateX(-50%);
 }
 /* ------------------------------------------
   SECOND SECTION - MISSION

@@ -370,10 +370,9 @@ header {
 }
 .main__header {
   font-weight: bold;
-  color: #fff;
+  color: #ffffff;
 }
 .main__subtext {
-<<<<<<< HEAD
   color: #ffffff;
 }
 .main__pointer {
@@ -384,15 +383,6 @@ header {
   position: absolute;
   bottom: 10px;
   transform: translateX(-50%);
-=======
-  font-size: 24px;
-  color: #fff;
-}
-.main__pointer {
-  padding-top: 8.7em;
-  font-size: 28px;
-  color: #fff;
->>>>>>> origin/master
 }
 /* ------------------------------------------
   SECOND SECTION - MISSION

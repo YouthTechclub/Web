@@ -12,14 +12,17 @@
 @maintextcolor: #fff;
 @missionheight: 150px;
 
-body, html{
-    height:100%;
+body, html {
+    height: 100%;
 }
 
+<<<<<<< HEAD
 a{
     text-decoration: none;
 }
 
+=======
+>>>>>>> origin/master
 body, div,
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
@@ -407,12 +410,12 @@ header {
 /* ------------------------------------------
   HOME SECTION - MAIN TITLE
 --------------------------------------------- */
-#home{
-    background: url(../img/header.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+#home {
+    background: url(../img/header.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .center{
@@ -495,12 +498,12 @@ header {
     display: inline-block;
 }
 
-#network__image, #rocket__image{
+#network__image, #rocket__image {
     width: 40%;
 }
 
-#network__text, #rocket__text{
-    width: 60%
+#network__text, #rocket__text {
+    width: 60%;
 }
 
 #network__text {
@@ -518,6 +521,64 @@ header {
 }
 
 
-.double__button{
+.double__button {
     width: 50%;
+}
+
+/* ------------------------------------------
+  CONTACT SECTION - FORM STYLING
+--------------------------------------------- */
+
+#contact {
+    background: @contactformbackground;
+    color: @contactformtitle;
+}
+
+input, textarea, button {
+    border: 2px solid @contactformtitle;
+    width: 20em;
+    margin: 5px;
+    padding: 5px;
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+}
+
+.customtextfield {
+    background-color: @contactformbackground;
+}
+
+.custombutton {
+    background-color: @contactformtitle;
+}
+
+.fa-col {
+    color: @contactformtitle;
+}
+
+.contact__container, .contact__image__container {
+    width: 100%;
+}
+
+.contact_image {
+    float: left;
+    width: 50%;
+    display: inline-block;
+}
+
+.contact__form {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    display: inline-block;
+}
+
+.right {
+    float: right;
+    width: 45%;
+    display: inline-block;
 }

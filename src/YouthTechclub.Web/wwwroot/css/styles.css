@@ -370,9 +370,10 @@ header {
 }
 .main__header {
   font-weight: bold;
-  color: #ffffff;
+  color: #fff;
 }
 .main__subtext {
+<<<<<<< HEAD
   color: #ffffff;
 }
 .main__pointer {
@@ -383,6 +384,15 @@ header {
   position: absolute;
   bottom: 10px;
   transform: translateX(-50%);
+=======
+  font-size: 24px;
+  color: #fff;
+}
+.main__pointer {
+  padding-top: 8.7em;
+  font-size: 28px;
+  color: #fff;
+>>>>>>> origin/master
 }
 /* ------------------------------------------
   SECOND SECTION - MISSION
@@ -450,4 +460,56 @@ header {
 }
 .double__button {
   width: 50%;
+}
+/* ------------------------------------------
+  CONTACT SECTION - FORM STYLING
+--------------------------------------------- */
+#contact {
+  background: #363736;
+  color: #dfdfdf;
+}
+input,
+textarea,
+button {
+  border: 2px solid #dfdfdf;
+  width: 20em;
+  margin: 5px;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  /* For legacy WebKit based browsers */
+  -moz-box-sizing: border-box;
+  /* For legacy (Firefox <29) Gecko based browsers */
+  box-sizing: border-box;
+}
+.customtextfield {
+  background-color: #363736;
+}
+.custombutton {
+  background-color: #dfdfdf;
+}
+.fa-col {
+  color: #dfdfdf;
+}
+.contact__container,
+.contact__image__container {
+  width: 100%;
+}
+.contact_image {
+  float: left;
+  width: 50%;
+  display: inline-block;
+}
+.contact__form {
+  width: 75%;
+  margin: 0 auto;
+}
+.left {
+  float: left;
+  width: 50%;
+  display: inline-block;
+}
+.right {
+  float: right;
+  width: 45%;
+  display: inline-block;
 }

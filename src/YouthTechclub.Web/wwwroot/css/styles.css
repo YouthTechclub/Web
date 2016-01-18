@@ -370,16 +370,16 @@ header {
 }
 .main__header {
   font-weight: bold;
-  color: #ffffff;
+  color: #fff;
 }
 .main__subtext {
-  color: #ffffff;
+  color: #fff;
 }
 .main__pointer {
   border: 3px solid white;
   border-radius: 50px;
   padding: 10px;
-  color: #ffffff;
+  color: #fff;
   position: absolute;
   bottom: 10px;
   transform: translateX(-50%);
@@ -454,6 +454,9 @@ header {
 /* ------------------------------------------
   CONTACT SECTION - FORM STYLING
 --------------------------------------------- */
+#contact__header {
+  padding-top: 1.25em;
+}
 #contact {
   background: #363736;
   color: #dfdfdf;
@@ -481,6 +484,17 @@ button {
   color: #dfdfdf;
 }
 .contact__container,
+.contact__form__container {
+  width: 900px;
+  margin: 0 auto;
+}
+.contact_description_container {
+  padding-bottom: 2em;
+}
+.contact__form {
+  width: 90%;
+  margin: 0 auto;
+}
 .contact__image__container {
   width: 100%;
 }
@@ -488,18 +502,59 @@ button {
   float: left;
   width: 50%;
   display: inline-block;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
-.contact__form {
-  width: 75%;
-  margin: 0 auto;
+.form_description {
+  height: 113px;
 }
-.left {
-  float: left;
-  width: 50%;
-  display: inline-block;
+.form_button {
+  height: 35px;
 }
-.right {
-  float: right;
-  width: 45%;
-  display: inline-block;
+@media (max-width: 767px) {
+  .contact__container,
+  .contact__form__container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .left,
+  .right {
+    width: 80%;
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact__container,
+  .contact__form__container {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .left {
+    float: left;
+    width: 260px;
+    display: inline-block;
+  }
+  .right {
+    float: right;
+    width: 250px;
+    display: inline-block;
+  }
+}
+@media (min-width: 1200px) {
+  .contact__container,
+  .contact__form__container {
+    width: 900px;
+    margin: 0 auto;
+  }
+  .left {
+    float: left;
+    width: 420px;
+    display: inline-block;
+  }
+  .right {
+    float: right;
+    width: 370px;
+    display: inline-block;
+  }
 }

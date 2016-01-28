@@ -6,13 +6,12 @@
     <title>Youth Techclub web</title>
     <!--<link href="css/app.css" rel="stylesheet" />-->
     <link href="css/styles.css" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto:700,400,100' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <link rel="stylesheet" href="css/ie.css">
     <![endif]-->
     <script src="js/responsive-nav.js"></script>
-    <script src="lib/dist/jquery.js"></script>
     <script src="js/app.js"></script>
     <link href="lib/components-font-awesome/css/font-awesome.css" rel="stylesheet" />
 </head>
@@ -24,7 +23,6 @@
             <ul>
                 <li class="menu-item active"><a href="#home" data-scroll>Home</a></li>
                 <li class="menu-item"><a href="#about" data-scroll>About</a></li>
-                <!--<li style="display:none;" class="menu-item"><a href="#projects" data-scroll>Projects</a></li>-->
                 <li class="menu-item"><a href="#contact" data-scroll>Contact us</a></li>
             </ul>
         </nav>
@@ -48,44 +46,36 @@
                     <p>Encourage young people to gain knowledge about IT.</p>
                 </div>
             </div>
-            <div class="mission__container">
+            <div class="explanation__container">
+                <img id="network__image" src="img/connect.svg" />
                 <div id="network__text">
                     <h1>HOW WE DO IT</h1>
                     <p>We connect them in one network with industry and learning facilities.</p>
                 </div>
-                <img id="network__image" src="img/connect.svg" />
             </div>
-            <img class="double__button" src="img/button.svg" alt="">
+            <a class="become__member" href="#about">BECOME A MEMBER</a>
         </div>
     </section>
 
-    <!--<section id="projects" style="display:none">
-        <h1>Projects</h1>
-    </section>-->
-
     <section id="contact">
-        <h1 id="contact__header">Contact us</h1>
         <div class="contact__container">
-            <div class="contact__image__container">
-                <div class="contact_image">
-                    <i class="fa fa-envelope fa-5x fa-col"></i>
-                    <p>youthtechclub@youthtechclub.lv</p>
-                </div>
-                <div class="contact_image">
-                    <i class="fa fa-mobile fa-5x fa-col"></i>
-                    <p>+371 27 164 700</p>
-                </div>
-            </div>
+            <h1 id="contact__header">Contact us</h1>
             <div class="contact_description_container">
                 <p>If you want to participate in Youth Techclub activities or just tell something to us, simply contact us by email</p>
             </div>
-            <div class="contact__form__container">
-                <form class="contact__form">
-                    <input class="customtextfield form_name left" type="text" name="name" placeholder="Your name" />
-                    <textarea class="customtextfield form_description right" rows="4" cols="50" placeholder="What do you want us to tell?"></textarea>
-                    <input class="customtextfield form_email left" type="text" name="email" placeholder="Your email" />
-                    <button class="custombutton form_button left" type="button">Send</button>
-                </form>
+            <div class="contact__image__container">
+                <div class="contact_image">
+                    <i class="fa fa-envelope fa-5x fa-col center_image"></i>
+                    <p>youthtechclub@youthtechclub.lv</p>
+                </div>
+                <div class="contact_image">
+                    <i class="fa fa-facebook-official fa-5x fa-col center_image"></i>
+                    <a href="http://facebook.com/" target="_blank">Facebook page</a>
+                </div>
+                <div class="contact_image">
+                    <i class="fa fa-mobile fa-5x fa-col center_image"></i>
+                    <p>+371 27 164 700</p>
+                </div>
             </div>
         </div>
     </section>

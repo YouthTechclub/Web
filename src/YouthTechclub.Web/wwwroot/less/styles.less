@@ -30,7 +30,7 @@ summary, hgroup {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: RobotoDraft,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
 a:active,
@@ -57,6 +57,7 @@ a:hover {
 @viewport {
     width: device-width;
 }
+
 /* ------------------------------------------
   RESPONSIVE ELEMENTS
 --------------------------------------------- */
@@ -70,11 +71,11 @@ a:hover {
         font-size: 1.5em;
     }
 
-    .mission__container h1 {
+    .mission__container h1, .explanation__container h1 {
         font-size: 3em;
     }
 
-    .mission__container p {
+    .mission__container p, .explanation__container p {
         font-size: 1.5em;
     }
 
@@ -92,11 +93,11 @@ a:hover {
         font-size: 2em;
     }
 
-    .mission__container h1 {
+    .mission__container h1, .explanation__container h1 {
         font-size: 1.75em;
     }
 
-    .mission__container p {
+    .mission__container p, .explanation__container p {
         font-size: 1.5em;
     }
 
@@ -114,11 +115,11 @@ a:hover {
         font-size: 2em;
     }
 
-    .mission__container h1 {
+    .mission__container h1, .explanation__container h1 {
         font-size: 1.75em;
     }
 
-    .mission__container p {
+    .mission__container p, .explanation__container p {
         font-size: 1.5em;
     }
 
@@ -200,7 +201,7 @@ body {
     font: normal 100%/1.4 sans-serif;
 }
 
-section {
+#home {
     text-align: center;
     height: 100%;
     width: 100%;
@@ -407,6 +408,7 @@ header {
 /* ------------------------------------------
   HOME SECTION - MAIN TITLE
 --------------------------------------------- */
+
 #home {
     background: url(../img/header.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -418,6 +420,10 @@ header {
 .center {
     position: relative;
     top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -437,6 +443,10 @@ header {
     color: @maintextcolor;
     position: absolute;
     bottom: 10px;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -450,77 +460,99 @@ header {
 
 .about__container {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     max-width: 960px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .mission__container {
     margin-bottom: 10%;
-    width: 100%;
-    position: relative;
-}
-
-.mission__container h1, {
-    color: @bluetitlecolor;
-}
-
-.mission__container p {
-    color: @bluetextcolor;
-}
-
-#rocket__image {
+    width: 300px;
     float: left;
-    height: @missionheight;
-    display: inline-block;
+    position: relative;
+    padding-left: 5em;
+    padding-top: 5em;
 }
 
-#rocket__text {
-    height: @missionheight;
-    display: inline-block;
-}
-
-#rocket__text h1 {
-    text-align: left;
-}
-
-#rocket__text p {
-    text-align: left;
-    width: auto !important;
-}
-
-#network__image {
+.explanation__container {
+    margin-bottom: 10%;
+    width: 300px;
     float: right;
+    position: relative;
+    padding-right: 5em;
+    padding-top: 5em;
+}
+
+#rocket__image, #network__image, #rocket__text, #network__text {
     height: @missionheight;
     display: inline-block;
+    width: 100%;
+    margin: 0 auto;
 }
 
-#network__image, #rocket__image {
-    width: 40%;
+#network__text p, #rocket__text p, #network__text h1, #rocket__text h1 {
+    text-align: center;
+    margin: 0 auto;
 }
-
-#network__text, #rocket__text {
-    width: 60%;
-}
-
-#network__text {
-    height: @missionheight;
-    display: inline-block;
-}
-
-#network__text h1 {
-    text-align: right;
-}
-
-#network__text p {
-    text-align: right;
-    width: auto !important;
-}
-
 
 .double__button {
     width: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.mission__container h1, .explanation__container h1 {
+    color: @bluetitlecolor;
+    padding-top: 2em;
+}
+
+.mission__container p .explanation__container p {
+    color: @bluetextcolor;
+}
+
+.become__member {
+    position: absolute;
+    border: 3px solid @bluetextcolor;
+    background: @bluetextcolor;
+    border-radius: 50px;
+    padding: 10px 35px 10px 35px;
+    bottom: 10px;
+}
+
+.become__member:link, .become__member:visited, .become__member:hover, .become__member:active {
+    color:@missionbackgroundcolor;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .mission__container h1, .explanation__container h1 {
+        font-size: 3em;
+    }
+
+    .mission__container p, .explanation__container p {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .mission__container h1, .explanation__container h1 {
+        font-size: 1.75em;
+    }
+
+    .mission__container p, .explanation__container p {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .mission__container h1, .explanation__container h1 {
+        font-size: 1.75em;
+    }
+
+    .mission__container p, .explanation__container p {
+        font-size: 1.5em;
+    }
 }
 
 /* ------------------------------------------
@@ -536,62 +568,44 @@ header {
     color: @contactformtitle;
 }
 
-input, textarea, button {
-    border: 2px solid @contactformtitle;
-    width: 20em;
-    margin: 5px;
-    padding: 5px;
-    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
-    box-sizing: border-box;
-}
-
-.customtextfield {
-    background-color: @contactformbackground;
-}
-
-.custombutton {
-    background-color: @contactformtitle;
-}
-
 .fa-col {
     color: @contactformtitle;
 }
 
-.contact__container, .contact__form__container {
-    width: 900px;
+.contact__container {
+    position: relative;
+    max-width: 960px;
     margin: 0 auto;
-}
-
-.contact_description_container {
-    padding-bottom: 2em;
-}
-
-.contact__form {
-    width: 90%;
-    margin: 0 auto;
+    overflow: hidden;
 }
 
 .contact__image__container {
     width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 2em;
 }
 
 .contact_image {
+    width: 33.33%;
     float: left;
-    width: 50%;
-    display: inline-block;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    position: relative;
 }
 
-
-
-.form_description {
-    height: 113px;
+.contact_image a {
+    width: 90%;
+    margin: 0 auto;
 }
 
-.form_button {
-    height: 35px;
+.contact__container h1 {
+    text-align: center;
+}
+
+.contact_description_container p {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2em;
 }
 
 // Phone - form is centered
@@ -606,7 +620,6 @@ input, textarea, button {
         display: inline-block;
         margin: 0 auto;
     }
-
 }
 
 //Tablet

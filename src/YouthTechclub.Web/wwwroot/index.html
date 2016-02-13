@@ -4,16 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1">
     <title>Youth Techclub web</title>
-    <!--<link href="css/app.css" rel="stylesheet" />-->
+    <link href="css/app.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <link rel="stylesheet" href="css/ie.css">
     <![endif]-->
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="js/responsive-nav.js"></script>
+    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <script src="js/app.js"></script>
-    <link href="lib/components-font-awesome/css/font-awesome.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -28,16 +31,90 @@
         </nav>
     </header>
 
-    <section id="home">
-        <div class="center">
-            <h1 class="main__header">Young people. IT industry. Now.</h1>
-            <p class="main__subtext">Youth Techclub connects young people with information technology.</p>
-            <p class="main__subtext">We bring together individuals, companies and educational institutions.</p>
+    <div id="home" class="jumbotron vertical-center">
+        <div class="center-block">
+            <h1 class="main-header main-white"><strong>Young people. IT industry. Now.</strong></h1>
+            <h2 class="main-subtext main-white">Youth Techclub connects young people with information technology.</h2>
+            <h2 class="main-subtext main-white">We bring together individuals, companies and educational institutions.</h2>
         </div>
-        <a class="main__pointer" href="#about">TAKE A LOOK</a>
-    </section>
+    </div>
 
-    <section id="about">
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img class="fixed-image" src="img/launch.svg" alt=""/>
+                    <div class="mision-text">
+                        <h1>OUR MISSION</h1>
+                        <h2>Encourage young people to gain knowledge about IT.</h2>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2">
+                    <img class="fixed-image" src="img/connect.svg" alt=""/>
+                    <div class="mision-text">
+                        <h1>HOW WE DO IT</h1>
+                        <h2>We connect them in one network with industry and learning facilities.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p>We learn by doing – we define project idea or a problem and then try to solve it.
+Members attend regular meet-up’s or training sessions once in a one or two weeks.
+Coding is not the only thing we learn – we also do a lot of prototyping, graphic design and electronics.
+Technologies/methodologies we are exploring and plan to explore: C#, Javascript, ASP.NET, Azure, ORM, Bootstrap, jQuery, AngularJS, Adobe Photoshop, Adobe Illustrator, Raspberry Pi, Xamarin (Android, Windows Phone), mobile app development, Agile.
+</p>
+            </div>
+            <div class="row">
+                <div class="text-center">
+                    <a class="member-button" href="#about">BECOME A MEMBER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="text-center contact-container">
+                    <h1>Contact us</h1>
+                    <h3>If you want to participate in Youth Techclub activities or just tell something to us, simply contact us by email</h3>
+                </div>
+            </div>
+            <div class="row icon-container">
+                <div class="col-sm-3 col-lg-3 text-center">
+                    <div class="font-icon hyper-link-icon">
+                        <i class="fa fa-envelope fa-5x fa-col"></i>
+                    </div>
+                    <a class="hyper-link" href="mailto:youthtechclub@youthtechclub.lv?Subject=Question" target="_top">Email</a>
+                </div>
+                <div class="col-sm-4 col-sm-offset-1 col-lg-4 col-lg-offset-1 text-center">
+                    <div class="font-icon hyper-link-icon">
+                        <i class="fa fa-facebook-official fa-5x fa-col"></i>
+                    </div>
+                    <a class="hyper-link" href="https://www.facebook.com/YouthTechClub/" target="_blank">Facebook page</a>
+                </div>
+                <div class="col-sm-3 col-sm-offset-1 col-lg-3 col-lg-offset-1 text-center">
+                    <div class="font-icon">
+                        <i class="fa fa-mobile fa-5x fa-col"></i>
+                    </div>
+                    <h4>+371 27 164 700</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<section id="home">
+            <div class="center">
+                <h1 class="main__header">Young people. IT industry. Now.</h1>
+                <p class="main__subtext">Youth Techclub connects young people with information technology.</p>
+                <p class="main__subtext">We bring together individuals, companies and educational institutions.</p>
+            </div>
+            <div class="text__center">
+                <a class="main__pointer" href="#about">TAKE A LOOK</a>
+            </div>
+        </section>-->
+    <!--<section id="about">
         <div class="about__container">
             <div class="mission__container">
                 <img id="rocket__image" src="img/launch.svg" />
@@ -55,9 +132,8 @@
             </div>
             <a class="become__member" href="#about">BECOME A MEMBER</a>
         </div>
-    </section>
-
-    <section id="contact">
+    </section>-->
+    <!--<section id="contact">
         <div class="contact__container">
             <h1 id="contact__header">Contact us</h1>
             <div class="contact_description_container">
@@ -65,20 +141,26 @@
             </div>
             <div class="contact__image__container">
                 <div class="contact_image">
-                    <i class="fa fa-envelope fa-5x fa-col center_image"></i>
+                    <div class="font__icon">
+                        <i class="fa fa-envelope fa-5x fa-col center_image"></i>
+                    </div>
                     <p>youthtechclub@youthtechclub.lv</p>
                 </div>
                 <div class="contact_image">
-                    <i class="fa fa-facebook-official fa-5x fa-col center_image"></i>
-                    <a href="http://facebook.com/" target="_blank">Facebook page</a>
+                    <div class="font__icon">
+                        <i class="fa fa-facebook-official fa-5x fa-col center_image"></i>
+                    </div>
+                    <a class="facebook__link" href="https://www.facebook.com/YouthTechClub/" target="_blank">Facebook page</a>
                 </div>
                 <div class="contact_image">
-                    <i class="fa fa-mobile fa-5x fa-col center_image"></i>
+                    <div class="font__icon">
+                        <i class="fa fa-mobile fa-5x fa-col center_image"></i>
+                    </div>
                     <p>+371 27 164 700</p>
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <script src="js/fastclick.js"></script>
     <script src="js/scroll.js"></script>

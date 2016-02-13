@@ -30,7 +30,7 @@ summary, hgroup {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: RobotoDraft,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif
+    font-family: RobotoDraft,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 a:active,
@@ -62,7 +62,7 @@ a:hover {
   RESPONSIVE ELEMENTS
 --------------------------------------------- */
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     .main__header {
         font-size: 3em;
     }
@@ -126,7 +126,7 @@ a:hover {
     .main__pointer {
         font-size: 1.5em;
     }
-}
+}*/
 
 /* ------------------------------------------
   RESPONSIVE NAV STYLES
@@ -342,7 +342,6 @@ header {
 
 @media screen and (min-width: 40em) {
     .nav-collapse a {
-        //padding: 1.02em 2em;
         text-align: center;
         border-top: 0;
         float: left;
@@ -409,7 +408,7 @@ header {
   HOME SECTION - MAIN TITLE
 --------------------------------------------- */
 
-#home {
+/*#home {
     background: url(../img/header.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -442,7 +441,7 @@ header {
     padding: 10px;
     color: @maintextcolor;
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
@@ -450,11 +449,16 @@ header {
     transform: translateX(-50%);
 }
 
+.text__center {
+    text-align: center;
+    vertical-align: bottom;
+}*/
+
 /* ------------------------------------------
   SECOND SECTION - MISSION
 --------------------------------------------- */
 
-#about {
+/*#about {
     background: @missionbackgroundcolor;
 }
 
@@ -520,7 +524,7 @@ header {
 }
 
 .become__member:link, .become__member:visited, .become__member:hover, .become__member:active {
-    color:@missionbackgroundcolor;
+    color: @missionbackgroundcolor;
     text-decoration: none;
 }
 
@@ -553,13 +557,13 @@ header {
     .mission__container p, .explanation__container p {
         font-size: 1.5em;
     }
-}
+}*/
 
 /* ------------------------------------------
   CONTACT SECTION - FORM STYLING
 --------------------------------------------- */
 
-#contact__header {
+/*#contact__header {
     padding-top: 1.25em;
 }
 
@@ -591,6 +595,7 @@ header {
     width: 33.33%;
     float: left;
     position: relative;
+    text-align: center;
 }
 
 .contact_image a {
@@ -606,58 +611,88 @@ header {
     text-align: center;
     margin: 0 auto;
     padding-bottom: 2em;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-// Phone - form is centered
-@media (max-width: 767px) {
-.contact__container, .contact__form__container {
-    width: 80%;
-    margin: 0 auto;
+.facebook__link:link, .facebook__link:visited, .facebook__link:hover, .facebook__link:active {
+    color: @missionbackgroundcolor;
+    text-decoration: none;
 }
 
-.left, .right {
-        width: 80%;
-        display: inline-block;
+//Phones
+@media (max-width: 479px) {
+    .contact__container, .contact__form__container, .contact_description_container {
+        width: 290px;
         margin: 0 auto;
+    }
+
+    .contact_image {
+        width: 290px;
+    }
+
+    .contact_image p, .contact_image a {
+        font-size: 1.2em;
+    }
+
+    .font_icon {
+        padding-bottom: 5px;
+    }
+
+    .contact__container h1 {
+        font-size: 2.2em;
+    }
+
+    .contact_description_container p {
+        font-size: 1.25em;
     }
 }
 
 //Tablet
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 480px) and (max-width: 767px) {
     .contact__container, .contact__form__container {
-    width: 600px;
-    margin: 0 auto;
-}
-    
-    .left {
-        float: left;
-        width: 260px;
-        display: inline-block;
+        width: 600px;
+        margin: 0 auto;
     }
 
-    .right {
-        float: right;
-        width: 250px;
-        display: inline-block;
+    .contact_image {
+        width: 33.33%;
+    }
+}
+
+
+//Tablet
+@media (min-width: 768px) and (max-width: 959px) {
+    .contact__container, .contact__form__container {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .contact_image {
+        width: 33.33%;
     }
 }
 
 //PC screen
-@media (min-width: 1200px) {
+@media (min-width: 960px) and (max-width: 1200px) {
     .contact__container, .contact__form__container {
-    width: 900px;
-    margin: 0 auto;
-}
-    
-    .left {
-        float: left;
-        width: 420px;
-        display: inline-block;
+        width: 900px;
+        margin: 0 auto;
     }
 
-    .right {
-        float: right;
-        width: 370px;
-        display: inline-block;
+    .contact_image {
+        width: 33.33%;
     }
 }
+
+//Large screen
+@media (min-width: 1201px) {
+    .contact__container, .contact__form__container {
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    .contact_image {
+        width: 33.33%;
+    }
+}*/

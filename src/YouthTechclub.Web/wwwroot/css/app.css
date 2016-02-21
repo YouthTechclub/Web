@@ -130,3 +130,27 @@
 .white-color {
     color: #CEF6EC !important;
 }
+
+.custom-glyphicon {
+    font-size: 3em;
+    color: #0e4970;
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+}
+
+.description-text {
+    font-size: 2em;
+    color: #1e74a1;
+}
+
+.copyright {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.technology-header {
+    color: #0e4970;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}

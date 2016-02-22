@@ -20,31 +20,95 @@
     font-size: 2.35em;
 }
 
-@media (max-width: 767px) {
-    .main-subtext {
-        font-size: 2em;
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    
+    .fixed-image {
+        height: 300px;
+        width: 300px;
+        padding-top: 3em;
     }
 
-    .center-block {
-        width: 95%;
+    .mision-text {
+        width: 100%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+    .fixed-image {
+        height: 250px;
+        width: 250px;
+        padding-top: 3em;
     }
 
+    .mision-text {
+        width: 100%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
     .fixed-image {
         height: 200px;
         width: 200px;
         padding-top: 3em;
     }
 
+    .mision-text {
+        width: 300px;
+    }
+
     .mision-text h1 {
-        padding-top: 0.5em;
+        font-size: 32px;
     }
 
     .mision-text h2 {
-        padding-bottom: 1.5em;
+        font-size: 26px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+    .fixed-image {
+        height: 150px;
+        width: 150px;
+        padding-top: 2em;
     }
 
-    .contact-container {
-        width: 90%;
+    .mision-text {
+        width: 200px;
+    }
+
+    .mision-text h1 {
+        font-size: 26px;
+    }
+
+    .mision-text h2 {
+        font-size: 22px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    .fixed-image {
+        height: 150px;
+        width: 150px;
+        padding-top: 2em;
+    }
+
+    .mision-text {
+        width: 100px;
+    }
+
+    .mision-text h1 {
+        font-size: 22px;
+    }
+
+    .mision-text h2 {
+        font-size: 18px;
     }
 }
 
@@ -56,8 +120,6 @@
 }
 
 .fixed-image {
-    height: 300px;
-    width: 300px;
     display: block;
     margin: 0 auto;
     padding-top: 5em;
@@ -72,6 +134,10 @@
     color: #dfdfdf;
 }
 
+.mision-text {
+        margin: 0 auto;
+}
+
 .mision-text h1 {
     text-align: center;
     margin: 0 auto;
@@ -83,7 +149,6 @@
     text-align: center;
     margin: 0 auto;
     color: #1e74a1;
-    padding-bottom: 3em;
 }
 
 .member-button {
@@ -92,12 +157,13 @@
     -ms-border-radius: 50px;
     border-radius: 50px;
     padding: 10px 35px 10px 35px;
+    font-size: 1.5em;
 }
 
-.member-button:link, .member-button:visited, .member-button:hover, .member-button:active {
-    color: #ecf0f1;
-    text-decoration: none;
-}
+    .member-button:link, .member-button:visited, .member-button:hover, .member-button:active {
+        color: #ecf0f1;
+        text-decoration: none;
+    }
 
 .hyper-link-icon {
     padding-bottom: 5px;
@@ -107,7 +173,6 @@
     color: #ecf0f1;
     font-size: 18px;
     text-decoration: none;
-
 }
 
 .font-icon {
@@ -153,4 +218,40 @@
     color: #0e4970;
     padding-top: 2em;
     padding-bottom: 1em;
+}
+
+.technology {
+    border: 3px solid #0e4970;
+    border-radius: 120px;
+    font-size: 1.5em;
+    color: #1e74a1;
+    height: 120px;
+    width: 120px;
+    line-height: 100px;
+    margin: 0 auto;
+}
+
+    .technology span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+    }
+
+
+.tech-row {
+    padding-bottom: 20px;
+}
+
+.min-text {
+    font-size: 18px;
+    line-height: 110px !important;
+}
+
+.member-row {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.mission-container {
+    padding-bottom: 3em;
 }

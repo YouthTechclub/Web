@@ -21,16 +21,51 @@
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-    
+@media only screen and (min-width : 993px) {
+
     .fixed-image {
         height: 300px;
         width: 300px;
         padding-top: 3em;
+        padding-bottom: 1em;
     }
 
     .mision-text {
         width: 100%;
+    }
+
+    .main-subtext {
+        font-size: 2.35em;
+    }
+
+    .description-text {
+        font-size: 2em;
+    }
+
+    .custom-glyphicon {
+        font-size: 3em;
+        display: inline-block;
+    }
+
+    .arrow-custom-glyphicon {
+        display: none;
+    }
+
+    .tech-row {
+        padding-bottom: 20px;
+    }
+
+    .tech-row div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .member-button {
+        font-size: 2em;
+    }
+
+    .arrow-custom-glyphicon {
+        display: none;
     }
 }
 
@@ -41,31 +76,96 @@
         height: 250px;
         width: 250px;
         padding-top: 3em;
+        padding-bottom: 1em;
     }
 
     .mision-text {
         width: 100%;
+    }
+
+    .main-subtext {
+        font-size: 2em;
+    }
+
+    .description-text {
+        font-size: 2em;
+    }
+
+    .custom-glyphicon {
+        font-size: 3em;
+        display: inline-block;
+    }
+
+    .arrow-custom-glyphicon {
+        display: none;
+    }
+
+    .tech-row {
+        padding-bottom: 20px;
+    }
+
+    .tech-row div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .member-button {
+        font-size: 2em;
+    }
+
+    .arrow-custom-glyphicon {
+        display: none;
     }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
     .fixed-image {
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
         padding-top: 3em;
+        padding-bottom: 1em;
     }
 
     .mision-text {
-        width: 300px;
+        width: 80%;
     }
 
-    .mision-text h1 {
-        font-size: 32px;
+        .mision-text h1 {
+            font-size: 32px;
+        }
+
+        .mision-text h2 {
+            font-size: 26px;
+        }
+
+    .description-text {
+        font-size: 1.75em;
+        text-align: center;
+        width: 100%;
     }
 
-    .mision-text h2 {
-        font-size: 26px;
+    .custom-glyphicon {
+        display: none;
+    }
+
+    .arrow-custom-glyphicon {
+        font-size: 1em;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .tech-row {
+        padding-bottom: 0;
+    }
+
+    .tech-row div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .member-button {
+        font-size: 2em;
     }
 }
 
@@ -73,21 +173,50 @@
 @media only screen and (max-width : 480px) {
 
     .fixed-image {
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
         padding-top: 2em;
+        padding-bottom: 0.5em;
     }
 
     .mision-text {
-        width: 200px;
+        width: 80%;
     }
 
-    .mision-text h1 {
-        font-size: 26px;
+        .mision-text h1 {
+            font-size: 26px;
+        }
+
+        .mision-text h2 {
+            font-size: 22px;
+        }
+
+    .description-text {
+        font-size: 1.5em;
+        text-align: center;
+        width: 100%;
     }
 
-    .mision-text h2 {
-        font-size: 22px;
+    .tech-row {
+        padding-bottom: 0;
+    }
+
+    .member-button {
+        font-size: 1.5em;
+    }
+
+    #contact h3 {
+        font-size: 18px;
+    }
+
+    .custom-glyphicon {
+        display: none;
+    }
+
+    .arrow-custom-glyphicon {
+        font-size: 1em;
+        display: inline-block;
+        margin: 0 auto;
     }
 }
 
@@ -97,18 +226,38 @@
         height: 150px;
         width: 150px;
         padding-top: 2em;
+        padding-bottom: 0.5em;
     }
 
     .mision-text {
-        width: 100px;
+        width: 80%;
     }
 
-    .mision-text h1 {
-        font-size: 22px;
+        .mision-text h1 {
+            font-size: 22px;
+        }
+
+        .mision-text h2 {
+            font-size: 18px;
+        }
+
+    .tech-row {
+        padding-bottom: 0;
     }
 
-    .mision-text h2 {
-        font-size: 18px;
+    .custom-glyphicon {
+        display: none;
+    }
+
+    .arrow-custom-glyphicon {
+        font-size: 1em;
+        display: inline-block;
+    }
+
+    .description-text {
+        font-size: 1.5em;
+        text-align: center;
+        width: 100%;
     }
 }
 
@@ -135,21 +284,21 @@
 }
 
 .mision-text {
+    margin: 0 auto;
+}
+
+    .mision-text h1 {
+        text-align: center;
         margin: 0 auto;
-}
+        color: #0e4970;
+        padding-top: 1em;
+    }
 
-.mision-text h1 {
-    text-align: center;
-    margin: 0 auto;
-    color: #0e4970;
-    padding-top: 1em;
-}
-
-.mision-text h2 {
-    text-align: center;
-    margin: 0 auto;
-    color: #1e74a1;
-}
+    .mision-text h2 {
+        text-align: center;
+        margin: 0 auto;
+        color: #1e74a1;
+    }
 
 .member-button {
     border: 3px solid #1e74a1;
@@ -157,7 +306,6 @@
     -ms-border-radius: 50px;
     border-radius: 50px;
     padding: 10px 35px 10px 35px;
-    font-size: 1.5em;
 }
 
     .member-button:link, .member-button:visited, .member-button:hover, .member-button:active {
@@ -197,15 +345,18 @@
 }
 
 .custom-glyphicon {
-    font-size: 3em;
     color: #0e4970;
     vertical-align: middle;
-    display: inline-block;
+    height: 100%;
+}
+
+.arrow-custom-glyphicon {
+    color: #0e4970;
+    vertical-align: middle;
     height: 100%;
 }
 
 .description-text {
-    font-size: 2em;
     color: #1e74a1;
 }
 
@@ -217,7 +368,7 @@
 .technology-header {
     color: #0e4970;
     padding-top: 2em;
-    padding-bottom: 1em;
+    padding-bottom: 3em;
 }
 
 .technology {
@@ -237,21 +388,31 @@
         line-height: normal;
     }
 
-
-.tech-row {
-    padding-bottom: 20px;
-}
-
 .min-text {
     font-size: 18px;
     line-height: 110px !important;
 }
 
 .member-row {
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 .mission-container {
     padding-bottom: 3em;
+}
+
+.approach-header {
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+    .approach-header h1 {
+        color: #0e4970;
+    }
+
+.initiative-comment {
+    width: 100%;
+    font-size: 1.5em;
+    color: #1e74a1;
 }

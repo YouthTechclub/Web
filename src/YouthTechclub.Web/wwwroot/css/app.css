@@ -1,5 +1,5 @@
 ﻿.jumbotron {
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/header2.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     -ms-background-size: cover;
@@ -55,17 +55,13 @@
         padding-bottom: 20px;
     }
 
-    .tech-row div {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+        .tech-row div {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
 
     .member-button {
         font-size: 2em;
-    }
-
-    .arrow-custom-glyphicon {
-        display: none;
     }
 }
 
@@ -104,10 +100,10 @@
         padding-bottom: 20px;
     }
 
-    .tech-row div {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+        .tech-row div {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
 
     .member-button {
         font-size: 2em;
@@ -159,10 +155,10 @@
         padding-bottom: 0;
     }
 
-    .tech-row div {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+        .tech-row div {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
 
     .member-button {
         font-size: 2em;
@@ -272,6 +268,12 @@
     display: block;
     margin: 0 auto;
     padding-top: 5em;
+}
+
+#home {
+    text-align: center;
+    height: 100%;
+    width: 100%;
 }
 
 #about {

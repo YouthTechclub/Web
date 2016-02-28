@@ -46,8 +46,11 @@ hgroup {
   font-family: RobotoDraft, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 a:active,
-a:hover {
+a:hover,
+a:focus {
   outline: 0;
+  color: none !important;
+  text-decoration: none !important;
 }
 @-webkit-viewport {
   width: device-width;
@@ -64,74 +67,6 @@ a:hover {
 @viewport {
   width: device-width;
 }
-/* ------------------------------------------
-  RESPONSIVE ELEMENTS
---------------------------------------------- */
-/*@media (max-width: 767px) {
-    .main__header {
-        font-size: 3em;
-    }
-
-    .main__subtext {
-        font-size: 1.5em;
-    }
-
-    .mission__container h1, .explanation__container h1 {
-        font-size: 3em;
-    }
-
-    .mission__container p, .explanation__container p {
-        font-size: 1.5em;
-    }
-
-    .main__pointer {
-        font-size: 1em;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-    .main__header {
-        font-size: 3em;
-    }
-
-    .main__subtext {
-        font-size: 2em;
-    }
-
-    .mission__container h1, .explanation__container h1 {
-        font-size: 1.75em;
-    }
-
-    .mission__container p, .explanation__container p {
-        font-size: 1.5em;
-    }
-
-    .main__pointer {
-        font-size: 1.25em;
-    }
-}
-
-@media (min-width: 1200px) {
-    .main__header {
-        font-size: 4em;
-    }
-
-    .main__subtext {
-        font-size: 2em;
-    }
-
-    .mission__container h1, .explanation__container h1 {
-        font-size: 1.75em;
-    }
-
-    .mission__container p, .explanation__container p {
-        font-size: 1.5em;
-    }
-
-    .main__pointer {
-        font-size: 1.5em;
-    }
-}*/
 /* ------------------------------------------
   RESPONSIVE NAV STYLES
 --------------------------------------------- */
@@ -181,34 +116,9 @@ a:hover {
   }
 }
 /* ------------------------------------------
-  DEMO STYLES
---------------------------------------------- */
-body {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  color: #37302a;
-  background: #fff;
-  font: normal 100%/1.4 sans-serif;
-}
-#home {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-}
-h1 {
-  margin-bottom: .5em;
-}
-p {
-  width: 90%;
-  margin: 0 auto;
-}
-/* ------------------------------------------
   FIXED HEADER
 --------------------------------------------- */
 header {
-  background: rgba(255, 255, 255, 0.5);
   position: fixed;
   z-index: 3;
   width: 100%;
@@ -220,8 +130,8 @@ header {
   text-decoration: none;
   font-weight: bold;
   padding: 0.7em 0 0 1em;
-  color: #6e6e6e;
-  font-size: 1.25em;
+  color: white;
+  font-size: 1.75em;
   float: left;
 }
 /* ------------------------------------------
@@ -296,18 +206,18 @@ header {
 }
 .nav-collapse a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-size: 1.25em;
-  border-top: 1px solid #6e6e6e;
+  font-size: 1.75em;
+  border-top: 1px solid white;
   text-decoration: none;
   padding: 0.7em 1em;
-  color: #6e6e6e;
+  color: white;
   width: 100%;
   float: left;
 }
-.nav-collapse a:active,
+/*.nav-collapse a:active,
 .nav-collapse .active a {
-  background: rgba(37, 119, 165, 0.4);
-}
+    background: rgba(37, 119, 165, 0.4);
+}*/
 @media screen and (min-width: 40em) {
   .nav-collapse a {
     text-align: center;
@@ -317,7 +227,6 @@ header {
   }
 }
 .nav-collapse ul ul a {
-  background: rgba(255, 255, 255, 0.5);
   padding-left: 2em;
 }
 @media screen and (min-width: 40em) {
@@ -347,7 +256,7 @@ header {
   float: right;
 }
 .nav-toggle:before {
-  color: #6e6e6e;
+  color: white;
   /* Edit this to change the icon color */
   font: normal 28px/55px "responsivenav";
   /* Edit font-size (28px) to change the icon size */
@@ -367,290 +276,3 @@ header {
   content: "\78";
   /* Close icon */
 }
-/* ------------------------------------------
-  HOME SECTION - MAIN TITLE
---------------------------------------------- */
-/*#home {
-    background: url(../img/header.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.center {
-    position: relative;
-    top: 50%;
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.main__header {
-    font-weight: bold;
-    color: @maintextcolor;
-}
-
-.main__subtext {
-    color: @maintextcolor;
-}
-
-.main__pointer {
-    border: 3px solid white;
-    border-radius: 50px;
-    padding: 10px;
-    color: @maintextcolor;
-    position: absolute;
-    bottom: 20px;
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.text__center {
-    text-align: center;
-    vertical-align: bottom;
-}*/
-/* ------------------------------------------
-  SECOND SECTION - MISSION
---------------------------------------------- */
-/*#about {
-    background: @missionbackgroundcolor;
-}
-
-.about__container {
-    position: relative;
-    max-width: 960px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.mission__container {
-    margin-bottom: 10%;
-    width: 300px;
-    float: left;
-    position: relative;
-    padding-left: 5em;
-    padding-top: 5em;
-}
-
-.explanation__container {
-    margin-bottom: 10%;
-    width: 300px;
-    float: right;
-    position: relative;
-    padding-right: 5em;
-    padding-top: 5em;
-}
-
-#rocket__image, #network__image, #rocket__text, #network__text {
-    height: @missionheight;
-    display: inline-block;
-    width: 100%;
-    margin: 0 auto;
-}
-
-#network__text p, #rocket__text p, #network__text h1, #rocket__text h1 {
-    text-align: center;
-    margin: 0 auto;
-}
-
-.double__button {
-    width: 50%;
-    position: relative;
-    margin: 0 auto;
-}
-
-.mission__container h1, .explanation__container h1 {
-    color: @bluetitlecolor;
-    padding-top: 2em;
-}
-
-.mission__container p .explanation__container p {
-    color: @bluetextcolor;
-}
-
-.become__member {
-    position: absolute;
-    border: 3px solid @bluetextcolor;
-    background: @bluetextcolor;
-    border-radius: 50px;
-    padding: 10px 35px 10px 35px;
-    bottom: 10px;
-}
-
-.become__member:link, .become__member:visited, .become__member:hover, .become__member:active {
-    color: @missionbackgroundcolor;
-    text-decoration: none;
-}
-
-@media (max-width: 767px) {
-    .mission__container h1, .explanation__container h1 {
-        font-size: 3em;
-    }
-
-    .mission__container p, .explanation__container p {
-        font-size: 1.5em;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-    .mission__container h1, .explanation__container h1 {
-        font-size: 1.75em;
-    }
-
-    .mission__container p, .explanation__container p {
-        font-size: 1.5em;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .mission__container h1, .explanation__container h1 {
-        font-size: 1.75em;
-    }
-
-    .mission__container p, .explanation__container p {
-        font-size: 1.5em;
-    }
-}*/
-/* ------------------------------------------
-  CONTACT SECTION - FORM STYLING
---------------------------------------------- */
-/*#contact__header {
-    padding-top: 1.25em;
-}
-
-#contact {
-    background: @contactformbackground;
-    color: @contactformtitle;
-}
-
-.fa-col {
-    color: @contactformtitle;
-}
-
-.contact__container {
-    position: relative;
-    max-width: 960px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.contact__image__container {
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
-    padding-bottom: 2em;
-}
-
-.contact_image {
-    width: 33.33%;
-    float: left;
-    position: relative;
-    text-align: center;
-}
-
-.contact_image a {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.contact__container h1 {
-    text-align: center;
-}
-
-.contact_description_container p {
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 2em;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.facebook__link:link, .facebook__link:visited, .facebook__link:hover, .facebook__link:active {
-    color: @missionbackgroundcolor;
-    text-decoration: none;
-}
-
-//Phones
-@media (max-width: 479px) {
-    .contact__container, .contact__form__container, .contact_description_container {
-        width: 290px;
-        margin: 0 auto;
-    }
-
-    .contact_image {
-        width: 290px;
-    }
-
-    .contact_image p, .contact_image a {
-        font-size: 1.2em;
-    }
-
-    .font_icon {
-        padding-bottom: 5px;
-    }
-
-    .contact__container h1 {
-        font-size: 2.2em;
-    }
-
-    .contact_description_container p {
-        font-size: 1.25em;
-    }
-}
-
-//Tablet
-@media (min-width: 480px) and (max-width: 767px) {
-    .contact__container, .contact__form__container {
-        width: 600px;
-        margin: 0 auto;
-    }
-
-    .contact_image {
-        width: 33.33%;
-    }
-}
-
-
-//Tablet
-@media (min-width: 768px) and (max-width: 959px) {
-    .contact__container, .contact__form__container {
-        width: 600px;
-        margin: 0 auto;
-    }
-
-    .contact_image {
-        width: 33.33%;
-    }
-}
-
-//PC screen
-@media (min-width: 960px) and (max-width: 1200px) {
-    .contact__container, .contact__form__container {
-        width: 900px;
-        margin: 0 auto;
-    }
-
-    .contact_image {
-        width: 33.33%;
-    }
-}
-
-//Large screen
-@media (min-width: 1201px) {
-    .contact__container, .contact__form__container {
-        width: 1100px;
-        margin: 0 auto;
-    }
-
-    .contact_image {
-        width: 33.33%;
-    }
-}*/

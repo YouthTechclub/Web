@@ -34,10 +34,6 @@
         width: 100%;
     }
 
-    .main-subtext {
-        font-size: 2.35em;
-    }
-
     .description-text {
         font-size: 2em;
     }
@@ -77,6 +73,10 @@
 
     .mision-text {
         width: 100%;
+    }
+
+    .main-header {
+        font-size: 3em;
     }
 
     .main-subtext {
@@ -121,6 +121,14 @@
         width: 250px;
         padding-top: 3em;
         padding-bottom: 1em;
+    }
+
+    .main-header {
+        font-size: 3em;
+    }
+
+    .main-subtext {
+        font-size: 2em;
     }
 
     .mision-text {
@@ -330,20 +338,17 @@
 }
 
 #contact h1 {
-    padding-top: 20px;
+    padding-top: 1.25em;
+    padding-bottom: 1em;
+}
+
+#contact h3 {
+    padding-bottom: 1.75em;
 }
 
 .contact-container {
     padding-bottom: 40px;
     margin: 0 auto;
-}
-
-.blue-color {
-    color: #2EFEC8 !important;
-}
-
-.white-color {
-    color: #CEF6EC !important;
 }
 
 .custom-glyphicon {
@@ -360,6 +365,7 @@
 
 .description-text {
     color: #1e74a1;
+    margin-right: 80px;
 }
 
 .copyright {
@@ -371,6 +377,7 @@
     color: #0e4970;
     padding-top: 2em;
     padding-bottom: 3em;
+    padding-top: 4em;
 }
 
 .technology {
@@ -380,7 +387,7 @@
     color: #1e74a1;
     height: 120px;
     width: 120px;
-    line-height: 100px;
+    line-height: 90px;
     margin: 0 auto;
 }
 

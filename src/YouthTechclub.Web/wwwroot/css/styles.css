@@ -134,6 +134,11 @@ header {
   font-size: 1.75em;
   float: left;
 }
+.logo:hover,
+.logo:active,
+.logo:focus {
+  color: white;
+}
 /* ------------------------------------------
   MASK
 --------------------------------------------- */

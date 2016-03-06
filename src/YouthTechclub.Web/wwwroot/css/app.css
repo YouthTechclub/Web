@@ -23,6 +23,8 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 993px) {
 
+
+
     .fixed-image {
         height: 300px;
         width: 300px;
@@ -41,6 +43,7 @@
     .custom-glyphicon {
         font-size: 3em;
         display: inline-block;
+        padding-left: 100px;
     }
 
     .arrow-custom-glyphicon {
@@ -90,6 +93,7 @@
     .custom-glyphicon {
         font-size: 3em;
         display: inline-block;
+        padding-left: 60px;
     }
 
     .arrow-custom-glyphicon {

@@ -23,7 +23,14 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 993px) {
 
+     .main-header {
+        font-size: 5em !important;
+        padding-bottom: 0.5em;
+    }
 
+    .main-subtext {
+        font-size: 2.5em;
+    }
 
     .fixed-image {
         height: 300px;
@@ -79,11 +86,12 @@
     }
 
     .main-header {
-        font-size: 3em;
+        font-size: 3.5em !important;
+        padding-bottom: 0.5em;
     }
 
     .main-subtext {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     .description-text {
@@ -128,11 +136,12 @@
     }
 
     .main-header {
-        font-size: 3em;
+        font-size: 3em !important;
+        padding-bottom: 0.5em;
     }
 
     .main-subtext {
-        font-size: 2em;
+        font-size: 1.8em !important;
     }
 
     .mision-text {
@@ -179,6 +188,15 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
+    .main-header {
+        font-size: 3em !important;
+        padding-bottom: 0.5em;
+    }
+
+    .main-subtext {
+        font-size: 1.8em !important;
+    }
 
     .fixed-image {
         height: 200px;
@@ -230,6 +248,16 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+    
+    .main-header {
+        font-size: 2.2em !important;
+        padding-bottom: 0.5em;
+    }
+
+    .main-subtext {
+        font-size: 1.3em !important;
+    }
+    
     .fixed-image {
         height: 150px;
         width: 150px;

@@ -359,9 +359,14 @@
     padding-bottom: 5px;
 }
 
-.hyper-link:link, .hyper-link:visited, .hyper-link:hover, .hyper-link:active {
+.hyper-link {
     color: #ecf0f1;
     font-size: 18px;
+    text-decoration: none;
+}
+
+.enclosed-hyper-link:link, .enclosed-hyper-link:visited, .enclosed-hyper-link:hover, .enclosed-hyper-link:active {
+    color: #dfdfdf;
     text-decoration: none;
 }
 

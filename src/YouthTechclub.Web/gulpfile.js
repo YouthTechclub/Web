@@ -9,6 +9,8 @@ var less = require('gulp-less');
 var concat = require('gulp-concat');
 var watch = require('gulp-watch');
 var plumber = require('gulp-plumber');
+var uglify = require('gulp-uglify');
+var cleanCss = require('gulp-clean-css');
 
 gulp.task('default', function () {
     // place code for your default task here
@@ -35,4 +37,16 @@ gulp.task('watch-build-less', function() {
         .pipe(plumber())
         .pipe(less())
         .pipe(gulp.dest('./wwwroot/css'));
+});
+
+gulp.task('compress-js', function() {
+    return gulp.src('./wwwroot/js/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('wwwroot/js/dist'));
+});
+
+gulp.task('clean-css', function() {
+    return gulp.src('./wwwroot/css/*.css')
+        .pipe(cleanCss({ compatibility: 'ie8' }))
+        .pipe(gulp.dest('wwwroot/css/dist'));
 });

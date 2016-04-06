@@ -28,3 +28,4 @@ namespace YouthTechclub.Web
         public static void Main(string[] args) => WebApplication.Run<Startup>(args);
     }
 }
+go ahead
